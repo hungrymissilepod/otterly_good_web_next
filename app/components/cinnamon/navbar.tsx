@@ -6,7 +6,7 @@ import { NavBarLink } from './navbar-link';
 
 export default function NavBar() {
   return (
-    <nav className='flex justify-between items-center px-20 py-6 bg-white sticky top-0 z-9999'>
+    <nav className='flex justify-between items-center px-20 py-6 bg-white z-10 sticky top-0'>
       <Image
         className=' inline-block dark:drop-shadow-[0_0_0.3rem_#ffffff70]'
         src='/next.svg'

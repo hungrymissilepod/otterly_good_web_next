@@ -1,17 +1,11 @@
 import Image from 'next/image';
 import React from "react";
-import { Button } from "@nextui-org/button";
 import Link from 'next/link';
-import { NavBarLink } from '../components/cinnamon/navbar-link';
 import NavBar from '../components/cinnamon/navbar';
-import CaseStudyCard from '../components/cinnamon/case-study-card';
-import CaseStudyCardTag from '../components/cinnamon/case-study-card-tag';
+import { CaseStudyCard, CaseStudyCardTag } from '../components/cinnamon/case-study-card';
 
 
 export default function Page() {
-  /// TODO: move these a tags into a component so they are reusable
-  /// TODO: pass in an [active] parameter so that we can work out from the current url path if that page is active or not
-  /// TODO: display this nav bar on all pages
   return (
     <body>
       <NavBar />
@@ -47,10 +41,22 @@ export default function Page() {
         <CaseStudyCard
           title='Engage & Decide'
           desc='Fiona is a fintech consumer-facing website that enables users to search for financial products, discover them, and receive personalized recommendations.'
+          tags={[
+            <CaseStudyCardTag key='1' title='PRODUCT DESIGN' />,
+            <CaseStudyCardTag key='2' title='WEB DEVELOPMENT' />,
+          ]}
+          image='/apple.png'
+          imageAlt='Apple'
         />
         <CaseStudyCard
           title='Optimize prices to maximize revenue'
           desc='Corrily tailors your prices and discounts to the needs of different user segments in order to increase your revenue.'
+          tags={[
+            <CaseStudyCardTag key='1' title='PRODUCT DESIGN' />,
+            <CaseStudyCardTag key='2' title='QUALITY ASSURANCE' />,
+          ]}
+          image='/kiwi.png'
+          imageAlt='Kiwi'
         />
       </div >
       <div className='bg-green-500 h-screen clear-both' ></div >

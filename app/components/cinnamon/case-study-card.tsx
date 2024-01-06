@@ -7,7 +7,7 @@ import Link from 'next/link';
 // TODO: pass in image
 // TOOD: pass in man image, name, and quote
 // TODO: pass in tags at top
-export default function CaseStudyCard({ title, desc }: { title: string, desc: string }) {
+function CaseStudyCard({ title, desc, tags, image, imageAlt }: { title: string, desc: string, tags: React.ReactElement[], image: string, imageAlt: string }) {
   return (
     <Link
       href={''}>
@@ -15,12 +15,7 @@ export default function CaseStudyCard({ title, desc }: { title: string, desc: st
         <div className='p-9 flex flex-row justify-between'>
           <div className='flex-1'>
             <ul>
-              <li className='inline-block pr-4'>
-                <p className='text-white font-bold text-xs'>PRODUCT DESIGN</p>
-              </li>
-              <li className='inline-block pr-4'>
-                <p className='text-white font-bold text-xs'>WEB DEVELOPMENT</p>
-              </li>
+              {tags}
             </ul>
             <h2 className='text-white font-bold text-4xl leading-normal py-4'>{title}</h2>
             <p className='text-white text-md text-lg leading-7'>{desc}</p>
@@ -46,8 +41,8 @@ export default function CaseStudyCard({ title, desc }: { title: string, desc: st
           <div className='flex justify-center items-center flex-1'>
             <Image
               className='dark:drop-shadow-[0_0_0.3rem_#ffffff70]'
-              src='/clutch.png'
-              alt='Clutch Logo'
+              src={image}
+              alt={imageAlt}
               width={360}
               height={72}
               priority
@@ -59,3 +54,13 @@ export default function CaseStudyCard({ title, desc }: { title: string, desc: st
   );
 }
 
+function CaseStudyCardTag({ title }: { title: string }) {
+  return (
+    <li className='inline-block pr-4'>
+      <p className='text-white font-bold text-xs'>{title}</p>
+    </li>
+  );
+}
+
+
+export { CaseStudyCard, CaseStudyCardTag };
