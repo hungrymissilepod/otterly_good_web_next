@@ -2,16 +2,19 @@ import Image from 'next/image';
 import React from "react";
 import { Button } from "@nextui-org/button";
 import Link from 'next/link';
+import { Props } from 'next/script';
 
 // TODO: pass in color
-// TODO: pass in image
-// TOOD: pass in man image, name, and quote
-// TODO: pass in tags at top
-function CaseStudyCard({ title, desc, tags, image, imageAlt }: { title: string, desc: string, tags: React.ReactElement[], image: string, imageAlt: string }) {
+function CaseStudyCard({ title, desc, tags, image, imageAlt, color }: { title: string, desc: string, tags: React.ReactElement[], image: string, imageAlt: string, color: any }) {
+  const colorVariants: any = {
+    purple: 'bg-purple-600 hover:shadow-purple-500',
+    green: 'bg-green-600 hover:shadow-green-500',
+  };
+
   return (
     <Link
       href={''}>
-      <div className='bg-purple-900 my-20 hover:shadow-purple-900 hover:shadow-2xl hover:scale-105 ease-in duration-75'>
+      <div className={`my-20 ${colorVariants[color]}  bg-${color}-900 hover:shadow-${color}-900 hover:shadow-2xl hover:scale-105 ease-in duration-75`}>
         <div className='p-9 flex flex-row justify-between'>
           <div className='flex-1'>
             <ul>
@@ -20,22 +23,36 @@ function CaseStudyCard({ title, desc, tags, image, imageAlt }: { title: string, 
             <h2 className='text-white font-bold text-4xl leading-normal py-4'>{title}</h2>
             <p className='text-white text-md text-lg leading-7'>{desc}</p>
             <div className='py-10'></div>
-            <ul>
-              <li className='inline-block pr-5'>
-                <Image
-                  className='rounded-full'
-                  src='/man.png'
-                  alt='Happy Man'
-                  width={50}
-                  height={50}
-                  priority
-                />
-              </li>
-              <div className='inline-block'>
-                <p className='font-bold py-2'>Great collaboration through the whole process</p>
-                <p>Alex Whiteside</p>
-              </div>
-            </ul>
+            <div>
+
+              <ul>
+                <li className='inline-block pr-5'>
+                  <div className='relative'>
+                    <Image
+                      className='absolute -top-8 -left-2 opacity-30'
+                      src='/quotes.png'
+                      alt='Quotation Marks'
+                      width='100'
+                      height='100'
+                    />
+                    <Image
+                      className='relative rounded-full z-10'
+                      src='/man.png'
+                      alt='Happy Man'
+                      width={50}
+                      height={50}
+                      priority
+                    />
+                  </div>
+
+                </li>
+                <div className='inline-block'>
+                  <p className='font-bold py-2'>Great collaboration through the whole process</p>
+                  <p>Alex Whiteside</p>
+                </div>
+              </ul>
+            </div>
+
 
           </div>
           <div className='flex justify-center items-center flex-1'>

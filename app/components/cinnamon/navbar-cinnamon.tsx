@@ -2,9 +2,8 @@ import Image from 'next/image';
 import React from "react";
 import { Button } from "@nextui-org/button";
 import Link from 'next/link';
-import { NavBarLink } from './navbar-link';
 
-export default function NavBar() {
+function NavBarCinnamon() {
   return (
     <nav className='flex justify-between items-center px-20 py-6 bg-white z-10 sticky top-0'>
       <Image
@@ -29,5 +28,12 @@ export default function NavBar() {
       </ul>
     </nav>
   );
-
 }
+
+function NavBarLink({ title, href }: { title: string, href: string }) {
+  return (
+    <li className="list-none inline-block"><a className="px-6 text-black font-medium hover:text-indigo-500" href={href}>{title}</a></li>
+  );
+}
+
+export { NavBarCinnamon, NavBarLink };
