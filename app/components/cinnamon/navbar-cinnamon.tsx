@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image';
 import React from "react";
 import { Button } from "@nextui-org/button";
@@ -5,10 +6,15 @@ import Link from 'next/link';
 import { CiMenuBurger } from "react-icons/ci";
 
 function NavBarCinnamon() {
+
+  const onClick = (e: any) => {
+    console.log('click');
+    // setDarkMode(e.target.value ? "light" : "dark");
+  };
   return (
-    <nav className='flex justify-between items-center mx-auto max-w-6xl px-4 xl:px-0 py-6 bg-white z-10 sticky top-0'>
+    <nav className='flex justify-between items-center mx-auto max-w-6xl px-4 xl:px-0 py-6 bg-white z-50 sticky top-0'>
       <Image
-        className=' inline-block dark:drop-shadow-[0_0_0.3rem_#ffffff70]'
+        className=' inline-block dark:drop-shadow-[0_0_0.3rem_#ffffff70] z-50'
         src='/next.svg'
         alt='Next.js Logo'
         width={180}
@@ -26,9 +32,9 @@ function NavBarCinnamon() {
             Let&#39;s collaborate
           </Button>
         </Link>
-        <a className='align-middle inline-block lg:hidden '>
+        <Link className='align-middle inline-block lg:hidden' href={''} onClick={onClick}>
           <CiMenuBurger style={{ "fontSize": "30px", "color": "black" }} />
-        </a>
+        </Link>
       </ul>
     </nav>
   );

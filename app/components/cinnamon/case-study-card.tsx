@@ -1,10 +1,7 @@
 import Image from 'next/image';
 import React from "react";
-import { Button } from "@nextui-org/button";
 import Link from 'next/link';
-import { Props } from 'next/script';
 
-// TODO: pass in color
 function CaseStudyCard({ title, desc, tags, image, imageAlt, color }: { title: string, desc: string, tags: React.ReactElement[], image: string, imageAlt: string, color: any }) {
   const colorVariants: any = {
     purple: 'bg-purple-600 hover:shadow-purple-500',
@@ -36,7 +33,7 @@ function CaseStudyCard({ title, desc, tags, image, imageAlt, color }: { title: s
                       height='100'
                     />
                     <Image
-                      className='relative rounded-full z-10'
+                      className='relative rounded-full z-0'
                       src='/man.png'
                       alt='Happy Man'
                       width={50}
