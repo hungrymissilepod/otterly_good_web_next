@@ -2,7 +2,7 @@ import { CaseStudyCard, CaseStudyCardTag } from "./case-study-card";
 
 export default function CaseStudySectionCinnamon() {
   return (
-    <div className='bg-white w-10/12 m-auto my-24'>
+    <div className='bg-white w-10/12 m-auto my-20 max-w-6xl'>
       <CaseStudyCard
         title='Engage & Decide'
         desc='Fiona is a fintech consumer-facing website that enables users to search for financial products, discover them, and receive personalized recommendations.'

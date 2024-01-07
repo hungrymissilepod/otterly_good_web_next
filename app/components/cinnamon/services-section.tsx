@@ -2,7 +2,7 @@ import ServiceCardCinnamon from "./service-card";
 
 export default function ServicesSectionCinnamon() {
   return (
-    <div className='bg-white w-10/12 m-auto my-24'>
+    <div className='bg-white w-10/12 m-auto my-20 max-w-6xl'>
       <h2 className="text-black text-5xl font-bold pb-12">Our services</h2>
       <div className="grid grid-cols-3 gap-20">
         <ServiceCardCinnamon

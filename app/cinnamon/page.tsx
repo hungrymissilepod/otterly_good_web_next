@@ -5,7 +5,9 @@ import ServicesSectionCinnamon from "../components/cinnamon/services-section";
 import FooterSectionCinnamon from "../components/cinnamon/footer-section";
 import { NavBarCinnamon } from "../components/cinnamon/navbar-cinnamon";
 
-// try out css tilt effect on an image when hovering over it
+// TODO: try out css tilt effect on an image when hovering over it
+// TODO: make page responsive
+// TODO: try out more interactive elements like carousel
 export default function Page() {
   return (
     <body>
