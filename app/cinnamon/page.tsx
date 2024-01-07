@@ -7,8 +7,6 @@ import OfficesCarouselCinnamon from "../components/cinnamon/offices-carousel";
 
 // TODO: try out css tilt effect on an image when hovering over it
 // TODO: check errors in console
-// TODO: check lighthouse score. How do we improve it?
-// TODO: check SEO score. How do we improve it?
 export default function Page() {
   return (
     <body>
