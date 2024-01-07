@@ -27,12 +27,12 @@ export default function OfficesCarouselCinnamon() {
 
   return (
     // This div will clip anything offscreen. This way the user cannot scroll horizontally
-    <div className="overflow-clip">
+    <div className="lg:overflow-clip">
       <div className='mx-auto lg:my-20 max-w-6xl px-4 xl:px-0'>
         <div className="justify-center">
           <div className="mx-auto max-w-6xl">
             <h2 className="text-black text-5xl font-bold pb-12">Our offices</h2>
-            <div className="flex flex-row max-w-6xl gap-10 w-screen flex-nowrap overflow-x-visible ease-in-out duration-300" style={styles}>
+            <div className="flex flex-row gap-10 w-screen py-4 lg:py-0 lg:overflow-x-visible overflow-x-scroll ease-in-out duration-300 no-scrollbar" style={styles}>
               <div className="block" style={{ "minWidth": "500px" }}>
                 <Image
                   src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -48,7 +48,6 @@ export default function OfficesCarouselCinnamon() {
                   </div>
                 </div>
               </div>
-
               <div className="block" style={{ "minWidth": "500px" }}>
                 <Image
                   src="https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -78,13 +77,12 @@ export default function OfficesCarouselCinnamon() {
                     <h1 className="text-black">99 Kichijojo Sun Road, Tokyo, Japan</h1>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
-
         </div>
-        <ul className="flex-row flex gap-x-10 pt-4">
+
+        <ul className="hidden lg:flex flex-row gap-x-10 py-4">
           <li className={`relative top-0 ease-in duration-100 drop-shadow-md ${index < 0 ? 'text-indigo-500 hover:-top-2' : 'text-gray-400'} `}>
             <button>
               <FaArrowLeft size={40} onClick={() => next()} style={{ "fontSize": "20px", "strokeWidth": "1px" }} />
