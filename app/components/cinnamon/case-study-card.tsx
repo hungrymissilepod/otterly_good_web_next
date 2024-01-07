@@ -14,9 +14,9 @@ function CaseStudyCard({ title, desc, tags, image, imageAlt, color }: { title: s
   return (
     <Link
       href={''}>
-      <div className={`my-20 ${colorVariants[color]}  bg-${color}-900 hover:shadow-${color}-900 hover:shadow-2xl hover:scale-105 ease-in duration-75`}>
+      <div className={`mt-10 mb-5 lg:mb-10 ${colorVariants[color]} bg-${color}-900 hover:shadow-${color}-900 hover:shadow-2xl hover:scale-105 ease-in duration-75`}>
         <div className='p-9 flex flex-row justify-between'>
-          <div className='flex-1'>
+          <div className='flex-1 hidden lg:block'>
             <ul>
               {tags}
             </ul>
@@ -71,10 +71,15 @@ function CaseStudyCard({ title, desc, tags, image, imageAlt, color }: { title: s
   );
 }
 
-function CaseStudyCardTag({ title }: { title: string }) {
+function CaseStudyCardTag({ title, color }: { title: string, color: any }) {
+  const colorVariants: any = {
+    white: 'text-white',
+    black: 'text-black',
+  };
+
   return (
     <li className='inline-block pr-4'>
-      <p className='text-white font-bold text-xs'>{title}</p>
+      <p className={`${colorVariants[color]} font-bold text-xs`}>{title}</p>
     </li>
   );
 }

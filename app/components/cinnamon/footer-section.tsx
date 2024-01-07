@@ -8,7 +8,7 @@ import { Button } from "@nextui-org/button";
 export default function FooterSectionCinnamon() {
   return (
     <footer className="w-full bg-black">
-      <div className=" pt-16 pb-10 max-w-6xl m-auto">
+      <div className=" pt-16 pb-10 px-4 xl:px-0 max-w-6xl m-auto">
         <div className="flex flex-row justify-between">
           <div className="flex flex-col justify-between">
             <div className="">

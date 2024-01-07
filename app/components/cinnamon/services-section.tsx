@@ -4,7 +4,7 @@ export default function ServicesSectionCinnamon() {
   return (
     <div className='bg-white w-10/12 m-auto my-20 max-w-6xl'>
       <h2 className="text-black text-5xl font-bold pb-12">Our services</h2>
-      <div className="grid grid-cols-3 gap-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
         <ServiceCardCinnamon
           title="Strategy"
           desc="Product discovery workshops, design sprints, user research, user interviews, and product planning are some techniques we use before jumping to the design itself."
