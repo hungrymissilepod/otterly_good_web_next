@@ -1,3 +1,5 @@
+const { withNextVideo } = require('next-video/process')
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
@@ -6,3 +8,6 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+
+const withVideos = require('next-videos');
+module.exports = withVideos();

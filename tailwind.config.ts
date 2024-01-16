@@ -8,11 +8,24 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        'og-black': '#212121',
+        'og-orange': '#E47229',
+        'og-white': '#F4F4F4',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      letterSpacing: {
+        'display': '-0.10em',
+        'display-extended': '0.5em',
+      },
+      fontSize: {
+        'display': '14rem',
+        'display-hover': '16rem',
+      }
     },
   },
   plugins: [],

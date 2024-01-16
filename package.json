@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev & npx next-video sync -w",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -11,6 +11,8 @@
   "dependencies": {
     "@nextui-org/button": "^2.0.26",
     "next": "14.0.4",
+    "next-video": "^0.11.2",
+    "next-videos": "^1.4.1",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.12.0"
