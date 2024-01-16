@@ -19,7 +19,7 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       letterSpacing: {
-        'display': '-0.10em',
+        'display': '-0.11em',
         'display-extended': '0.5em',
       },
       fontSize: {
