@@ -1,4 +1,4 @@
-const { withNextVideo } = require('next-video/process')
+const withVideos = require('next-videos');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -7,7 +7,4 @@ const nextConfig = {
   }
 }
 
-module.exports = nextConfig
-
-const withVideos = require('next-videos');
-module.exports = withVideos();
+module.exports = withVideos(nextConfig);
