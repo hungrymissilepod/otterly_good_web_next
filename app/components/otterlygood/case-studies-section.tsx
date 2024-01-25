@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function CaseStudiesSection() {
   return (
-    <div className="my-10 mx-auto max-w-7xl">
+    <div className="my-20 py-20 mx-auto max-w-7xl">
       <div className="text-og-black text-4xl font-bold py-8">
         Our work
       </div>

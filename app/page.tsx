@@ -4,6 +4,7 @@ import { CaseStudiesSection } from './components/otterlygood/case-studies-sectio
 import { ServicesSection } from './components/otterlygood/services-section';
 import { PricingSection } from './components/otterlygood/pricing-section';
 import { ContactSection } from './components/otterlygood/contact-section';
+import { Footer } from './components/otterlygood/footer';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <ServicesSection />
         <PricingSection />
         <ContactSection />
+        <Footer />
       </body>
     </main>
   );

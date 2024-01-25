@@ -1,6 +1,6 @@
 function ServicesSection() {
   return (
-    <div className="my-10 mx-auto">
+    <div className="my-20 py-20 mx-auto">
       <div className="text-og-black text-4xl font-bold py-8 max-w-7xl mx-auto">
         Our services
       </div>

@@ -4,7 +4,7 @@ import { Textarea } from "@nextui-org/react";
 // TODO: add form validation and submit this info to my email address
 function ContactSection() {
   return (
-    <div className="my-10 mx-auto max-w-7xl">
+    <div className="my-20 py-20 mx-auto max-w-7xl">
       <div className="text-og-black text-4xl font-bold py-8 max-w-7xl mx-auto">
         Contact us
       </div>
