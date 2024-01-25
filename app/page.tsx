@@ -3,6 +3,7 @@ import { NavBar } from './components/otterlygood/navbar';
 import { CaseStudiesSection } from './components/otterlygood/case-studies-section';
 import { ServicesSection } from './components/otterlygood/services-section';
 import { PricingSection } from './components/otterlygood/pricing-section';
+import { ContactSection } from './components/otterlygood/contact-section';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <CaseStudiesSection />
         <ServicesSection />
         <PricingSection />
+        <ContactSection />
       </body>
     </main>
   );
