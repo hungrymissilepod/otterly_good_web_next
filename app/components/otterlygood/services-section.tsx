@@ -1,9 +1,6 @@
 'use client';
 import { gsap } from 'gsap';
-import { useLayoutEffect, useRef } from "react";
-import { useGSAP } from "@gsap/react";
-
-
+import { useEffect, useRef } from "react";
 
 function ServicesSection() {
   return (
@@ -28,16 +25,45 @@ function ServicesSection() {
 
 function ServicesTile({ title, desc }: { title: string, desc: string }) {
   const box = useRef(null);
+  const boxTween = useRef<gsap.core.Tween>();
+  // const [hover, setHover] = useState(false);
 
-  useGSAP((context) => {
-    gsap.to(".box", { rotation: "+=360" });
-  }, { scope: box });
+  // useGSAP((context) => {
+  //   gsap.to(".box", { rotation: "+=360" });
+  // }, { scope: box });
+
+  // let animation = gsap.to(".box", {
+  //   paused: true,
+  //   opacity: 0
+  // });
+
+  useEffect(() => {
+    boxTween.current = gsap.to(box.current, {
+      duration: 0.5,
+      backgroundColor: '#E47229',
+      paused: true
+    });
+  }, []);
+
+  const onMouseEnterHandler = () => {
+    console.log('mouse enter');
+    boxTween.current?.play();
+  };
+  const onMouseLeaveHandler = () => {
+    boxTween.current?.reverse();
+  };
 
   return (
-    <div className="bg-og-orange hover:bg-transparent" ref={box}>
-      <div className="box group flex flex-row justify-between items-center max-w-7xl mx-auto">
-        <h2 className="text-og-black text-8xl font-black group-hover:text-og-white">{title}</h2>
-        <p className="hidden group-hover:inline text-white">{desc}</p>
+    <div
+      ref={box}
+      onMouseEnter={onMouseEnterHandler}
+      onMouseLeave={onMouseLeaveHandler}
+    >
+      <div className="box hover:bg-og-orange">
+        <div className="group flex flex-row justify-between items-center max-w-7xl mx-auto">
+          <h2 className="text-og-black text-8xl font-black group-hover:text-og-white">{title}</h2>
+          <p className="hidden group-hover:inline text-white">{desc}</p>
+        </div>
       </div>
     </div>
   );
