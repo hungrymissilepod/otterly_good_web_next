@@ -6,6 +6,7 @@ import { PricingSection } from './components/otterlygood/pricing-section';
 import { ContactSection } from './components/otterlygood/contact-section';
 import { Footer } from './components/otterlygood/footer';
 
+
 export default function Home() {
   return (
     <main>

@@ -1,8 +1,5 @@
 'use client';
 import React, { useRef, useState } from "react";
-import { Red_Hat_Display } from 'next/font/google'
-
-const redHatDisplay = Red_Hat_Display({ subsets: ['latin'] })
 
 export default function HeroSection() {
   // const videoRef = useRef<HTMLVideoElement>(null);
@@ -44,8 +41,8 @@ export default function HeroSection() {
         {/* <h1 className="text-3xl md:text-6xl  lg:text-8xl text-center container">SAVING WEBISTES &<br /> APPS, ONE DESIGN<br /> AT A TIME!</h1> */}
 
         {/* TODO: use correct font here */}
-        <h1 className={`${redHatDisplay.className} text-3xl md:text-6xl  lg:text-8xl text-center container`}>
-          SAVING <span className="underline hover:bg-og-orange hover:text-og-black">WEBISTES</span> &<br />
+        <h1 className={`text-3xl md:text-6xl  lg:text-8xl text-center container font-poppins font-bold`}>
+          SAVING <span className="underline hover:bg-og-orange hover:text-og-black font-custom">WEBISTES</span> &<br />
           <span className="underline hover:bg-og-orange hover:text-og-black">APPS,</span> ONE <span className="underline hover:bg-og-orange hover:text-og-black">DESIGN</span><br /> AT A TIME!
         </h1>
         <p className="mx-8 text-center py-12">I&apos;m baby freegan sriracha deep v chillwave pitchfork health goth try-hard big mood poke lomo kitsch authentic disrupt godard.</p>

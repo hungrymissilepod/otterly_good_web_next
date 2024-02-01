@@ -14,6 +14,8 @@ const config: Config = {
         'og-black': '#212121',
         'og-orange': '#E47229',
         'og-white': '#F4F4F4',
+        'og-light-brown': '#ABA9A6',
+        'og-cream': '#F0EDE6',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -27,6 +29,10 @@ const config: Config = {
       fontSize: {
         'display': '14rem',
         'display-hover': '16rem',
+      },
+      fontFamily: {
+        'sans': ['Helvetica Neue', 'Arial', 'sans-serif'],
+        'poppins': ['Poppins', 'sans-serif'],
       }
     },
   },
