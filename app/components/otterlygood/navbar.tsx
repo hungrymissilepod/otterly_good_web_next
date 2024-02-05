@@ -3,17 +3,19 @@ import { Button } from "@nextui-org/button";
 
 function NavBar() {
   return (
-    <nav className="bg-og-black sticky top-0 z-10">
-      <div className="mx-auto max-w-7xl flex flex-row justify-between items-center py-4 ">
-        Logo here
-        <ul className="flex flex-row gap-x-8">
-          <li className="text-og-orange">Case Studies</li>
-          <li>Case Studies</li>
-          <li>Case Studies</li>
-        </ul>
-        <CTAButton></CTAButton>
-      </div>
-    </nav>
+    <div className='flex justify-center'>
+      <nav className="bg-og-black fixed top-8 z-10 rounded-full container">
+        <div className="flex flex-row justify-between items-center py-3 mx-8">
+          Logo here
+          <ul className="flex flex-row gap-x-8">
+            <li className="text-og-orange">Case Studies</li>
+            <li>Case Studies</li>
+            <li>Case Studies</li>
+          </ul>
+          <CTAButton></CTAButton>
+        </div>
+      </nav>
+    </div>
   );
 }
 
@@ -30,7 +32,7 @@ function CTAButton(propsIn: CTAButtonProps) {
   return (
     // TODO: should scroll down to contact us form
     <Link className='hidden lg:inline-block' href='/'>
-      <Button className={`px-6 py-2 font-bold border-white border-2 ${props.color} text-og-white`} radius='none'>Get in touch</Button>
+      <Button className={`px-6 py-2 font-bold rounded-[12px] border-white border-2 ${props.color} text-og-white`} radius='none'>Get in touch</Button>
     </Link>
   );
 }
