@@ -1,49 +1,49 @@
 import { CTAButton } from "./navbar";
+import { Red_Hat_Display } from "next/font/google";
 
+const redHatDisplay = Red_Hat_Display({ subsets: ['latin'], weight: ['900'] })
 
 function Footer() {
   return (
-    <div className="mx-auto bg-og-black">
-      <div className="max-w-7xl mx-auto">
+    <div className="w-full bg-og-black container mx-auto">
+      <div className="flex flex-row justify-between py-8">
         <div>
-          <div className="text-og-white text-4xl font-bold py-8 ">
+          <div className="text-og-white text-4xl font-bold ">
             Like what you see?
           </div>
-          <CTAButton />
+          <div className="py-8">
+            <CTAButton />
+          </div>
+
         </div>
-
-        <div className="flex flex-row justify-between my-12">
-          <div>
-            <p>Drop us a line:</p>
-            <p>hello@otterlygood</p>
-          </div>
-          <div className="flex flex-row gap-x-8">
-            <div>
-              <p>LinkedIn</p>
-              <p>YouTube</p>
-            </div>
-            <div>
-              <p>LinkedIn</p>
-              <p>YouTube</p>
-            </div>
-          </div>
+        <div className="flex flex-row gap-x-40">
+          <ul className="text-og-white text-sm pt-2">
+            <li className="mb-1">Home</li>
+            <li className="mb-1">Case Studies</li>
+            <li className="mb-1">Services</li>
+            <li className="mb-1">Blog</li>
+            <li className="mb-1">About</li>
+            <li className="mb-1">Contact Us</li>
+          </ul>
+          <ul className="text-og-white text-sm pt-2">
+            <li className="mb-1">X</li>
+            <li className="mb-1">Instagram</li>
+            <li className="mb-1">Linkedin</li>
+            <li className="mb-1">Github</li>
+          </ul>
         </div>
-
-        {/* This should expand whole width of screen */}
-        <h2 className="text-9xl text-center font-[900]" >OTTERLY GOOD<span className="text-og-orange">.</span></h2>
-
-        <div className="flex flex-row justify-between py-8">
-          <div className="flex flex-row gap-x-16">
-            <p>Made in Manchester, UK</p>
-            <p>Copyright 2024</p>
-          </div>
-          <div className="flex flex-row gap-x-16">
-            <p>Privacy Policy</p>
-            <p>Legal</p>
-          </div>
-        </div>
-
       </div>
+
+      <div className="my-20">
+        <p className="text-og-white font-bold leading-8 text-xl">Drop us a line: <br /><span className="font-normal underline">hello@otterlygood.com</span></p>
+      </div>
+
+      <div className="flex flex-row justify-between text-og-white text-sm">
+        <p>Made in Manchester, UK</p>
+        <p>©2024 Legal</p>
+      </div>
+
+      <p className={`${redHatDisplay.className} pt-4 text-center text-[10.6vw] leading-none after:inline-block after:w-full after:content-none`}>OTTERLY GOOD<span className="text-og-orange">.</span></p>
     </div>
   );
 }

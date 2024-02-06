@@ -19,8 +19,8 @@ function ContactSection() {
               Alternatively, feel free to drop us line!
               <br />
               <br />
-              Email: hello@otterlygood.com
             </p>
+            <p>Email: <span className="underline">hello@otterlygood.com</span></p>
           </div>
 
           <div className="col-start-6 col-span-5">

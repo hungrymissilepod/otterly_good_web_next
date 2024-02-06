@@ -4,7 +4,7 @@ import { Button } from "@nextui-org/button";
 function NavBar() {
   return (
     <div className='flex justify-center'>
-      <nav className="bg-og-black fixed top-8 z-10 rounded-full container">
+      <nav className="bg-og-black fixed top-4 z-10 rounded-full container ">
         <div className="flex flex-row justify-between items-center py-3 mx-8">
           Logo here
           <ul className="flex flex-row gap-x-8">

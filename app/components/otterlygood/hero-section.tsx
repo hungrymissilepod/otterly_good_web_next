@@ -41,11 +41,11 @@ export default function HeroSection() {
   // TODO: add final image and copy
   return (
     <div className="w-full h-[90vh] bg-og-black flex">
-      <div className="flex items-end mx-auto container">
+      <div className="flex items-end mx-auto container ">
         <div className="flex flex-row w-full justify-between mb-12">
           <div className="self-center">
             <h1 className="{`text-3xl  md:text-6xl lg:text-6xl font-poppins font-bold grow xl:leading-loose text-og-white`}" style={{ lineHeight: "1.15em" }} >We <span className="text-og-orange">Design</span> &<br /> Build Amazing<br /><span className="text-og-orange">Website</span> and <span className="text-og-orange">Apps</span></h1>
-            <p className="font-sans mt-8 mb-10 leading-relaxed text-xl text-og-white">I'm baby freegan sriracha deep v chillwave pitchfork health goth<br />try-hard big mood poke lomo kitsch authentic disrupt godard.</p>
+            <p className="font-sans mt-8 mb-10 leading-relaxed text-xl text-og-white">I&apos;m baby freegan sriracha deep v chillwave pitchfork health goth<br />try-hard big mood poke lomo kitsch authentic disrupt godard.</p>
             <CTAButton />
           </div>
           <Image
