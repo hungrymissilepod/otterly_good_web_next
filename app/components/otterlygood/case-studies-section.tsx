@@ -5,7 +5,7 @@ import { Button } from "@nextui-org/button";
 function CaseStudiesSection() {
   return (
     <div className='bg-og-cream'>
-      <div className='mx-auto max-w-7xl container py-20'>
+      <div className='mx-auto container py-20'>
         <h2 className='text-og-black font-bold text-2xl'>OUR WORK</h2>
         <CaseStudyRightAligned></CaseStudyRightAligned>
         <CaseStudy></CaseStudy>

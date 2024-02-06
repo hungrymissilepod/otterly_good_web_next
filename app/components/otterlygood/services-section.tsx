@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 function ServicesSection() {
   return (
     <div className='bg-white'>
-      <div className='mx-auto max-w-7xl container py-20'>
+      <div className='mx-auto container py-20'>
         <h2 className='text-og-black font-bold text-2xl'>HOW CAN WE HELP YOU?</h2>
         <div className='grid grid-cols-4 pt-32 pb-16'>
           <div className='flex flex-col items-center'>

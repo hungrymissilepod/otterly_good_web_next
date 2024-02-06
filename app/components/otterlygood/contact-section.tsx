@@ -6,7 +6,7 @@ import { CTAButton } from "./navbar";
 function ContactSection() {
   return (
     <div className='bg-og-cream'>
-      <div className='mx-auto max-w-7xl container py-20'>
+      <div className='mx-auto container py-20'>
         <h2 className='text-og-black font-bold text-2xl'>CONTACT US</h2>
         <div className="grid grid-cols-10 justify-between gap-4 pt-20 pb-10 ">
           <div className="flex flex-col col-span-3 text-og-black leading-8 text-xl justify-between my-10">
