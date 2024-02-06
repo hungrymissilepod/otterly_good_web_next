@@ -12,7 +12,9 @@ function NavBar() {
             <li>Case Studies</li>
             <li>Case Studies</li>
           </ul>
-          <CTAButton></CTAButton>
+          <CTAButton
+            primary={false}
+          ></CTAButton>
         </div>
       </nav>
     </div>
@@ -20,19 +22,21 @@ function NavBar() {
 }
 
 interface CTAButtonProps {
-  color?: string;
+  primary?: boolean;
 }
 
 const defaultCTAButtonProps: CTAButtonProps = {
-  color: 'bg-og-black',
+  primary: true,
 }
 
 function CTAButton(propsIn: CTAButtonProps) {
   var props = { ...defaultCTAButtonProps, ...propsIn }
+  var btnColor = props.primary ? 'bg-og-black' : 'bg-og-white'
+  var textColor = props.primary ? 'text-og-white' : 'text-og-black'
   return (
     // TODO: should scroll down to contact us form
     <Link className='hidden lg:inline-block' href='/'>
-      <Button className={`px-6 py-2 font-bold rounded-[12px] border-white border-2 ${props.color} text-og-white`} radius='none'>Get in touch</Button>
+      <Button className={`px-8 py-5 font-bold rounded-[12px] border-og-white border-2 ${btnColor} ${textColor} font-bold text-md font-sans`} radius='none'>Get in touch</Button>
     </Link>
   );
 }

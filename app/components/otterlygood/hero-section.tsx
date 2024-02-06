@@ -44,17 +44,17 @@ export default function HeroSection() {
       <div className="flex items-end mx-auto container">
         <div className="flex flex-row w-full justify-between mb-12">
           <div className="self-center">
-            <h1 className="{`text-3xl  md:text-6xl lg:text-6xl font-poppins font-bold grow xl:leading-loose`}" style={{ lineHeight: "1.15em" }} >We <span className="text-og-orange">Design</span> &<br /> Build Amazing<br /><span className="text-og-orange">Website</span> and <span className="text-og-orange">Apps</span></h1>
-            <p className="font-sans my-8 leading-relaxed">I'm baby freegan sriracha deep v chillwave pitchfork health goth<br />try-hard big mood poke lomo kitsch authentic disrupt godard.</p>
+            <h1 className="{`text-3xl  md:text-6xl lg:text-6xl font-poppins font-bold grow xl:leading-loose text-og-white`}" style={{ lineHeight: "1.15em" }} >We <span className="text-og-orange">Design</span> &<br /> Build Amazing<br /><span className="text-og-orange">Website</span> and <span className="text-og-orange">Apps</span></h1>
+            <p className="font-sans mt-8 mb-10 leading-relaxed text-xl text-og-white">I'm baby freegan sriracha deep v chillwave pitchfork health goth<br />try-hard big mood poke lomo kitsch authentic disrupt godard.</p>
             <CTAButton />
           </div>
           <Image
-            src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?q=80&w=1267&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="/hero.png"
             alt="New York Office"
             width={0}
             height={0}
             sizes="100vw"
-            style={{ width: '22%', height: 'auto' }}
+            style={{ width: '40%', height: 'auto' }}
           />
         </div>
       </div >
