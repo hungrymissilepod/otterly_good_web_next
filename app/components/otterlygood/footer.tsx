@@ -3,7 +3,7 @@ import { CTAButton } from "./navbar";
 
 function Footer() {
   return (
-    <div className="mt-20 mx-auto bg-og-black">
+    <div className="mx-auto bg-og-black">
       <div className="max-w-7xl mx-auto">
         <div>
           <div className="text-og-white text-4xl font-bold py-8 ">
