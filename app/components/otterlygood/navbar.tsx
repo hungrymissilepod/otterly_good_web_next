@@ -1,22 +1,32 @@
 import Link from 'next/link';
 import { Button } from "@nextui-org/button";
+import { HiOutlineMenuAlt1 } from 'react-icons/hi';
 
 function NavBar() {
   return (
-    <div className='flex justify-center'>
-      <nav className="bg-og-black fixed top-4 z-10 rounded-full container ">
-        <div className="flex flex-row justify-between items-center py-3 mx-8">
-          Logo here
-          <ul className="flex flex-row gap-x-8">
-            <li className="text-og-orange">Case Studies</li>
-            <li>Case Studies</li>
-            <li>Case Studies</li>
-          </ul>
+    <div className='mx-8 lg:mx-0'>
+      <div className='bg-og-black mx-auto max-w-7xl fixed top-4 left-4 lg:left-0 right-4 lg:right-0 z-10 py-2 rounded-full'>
+        <div className='flex justify-between items-center align-middle mx-8'>
+
+          {/* TODO: after adding logo, make sure navbar height does not change when resizing screen */}
+          <div className='h-8 py-5 align-middle flex flex-col justify-center bg-blue-500'>
+            Logo here
+          </div>
+          <div className='hidden lg:inline-block'>
+            <ul className="flex flex-row gap-x-8">
+              <li className="text-og-orange">Case Studies</li>
+              <li>Case Studies</li>
+              <li>Case Studies</li>
+            </ul>
+          </div>
           <CTAButton
             primary={false}
           ></CTAButton>
+          <Link className='inline-block lg:hidden' href={''}>
+            <HiOutlineMenuAlt1 style={{ "fontSize": "30px", "color": "white" }} />
+          </Link>
         </div>
-      </nav>
+      </div>
     </div>
   );
 }
