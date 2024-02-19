@@ -39,6 +39,50 @@ export default function HeroSection() {
   // TODO: make sure this is responsive
   // TODO: check line height is correct and responsive
   // TODO: add final image and copy
+
+  return (
+    // {/* Mobile version */}
+    <div className="bg-og-black ">
+      <div className="lg:hidden w-full py-20">
+        <div className="flex flex-col pt-8 px-4">
+          <h1 className="{`mx-auto text-6xl text-center font-poppins font-bold grow xl:leading-loose text-og-white`}" style={{ lineHeight: "1.15em" }} >We <span className="text-og-orange">Design</span> &<br />Build Amazing<br /><span className="text-og-orange">Website</span> and <span className="text-og-orange">Apps</span></h1>
+          <p className="font-sans mt-8 mb-10 md:px-20 text-center px-2 leading-relaxed text-xl text-og-white">I&apos;m baby freegan sriracha deep v chillwave pitchfork health goth try-hard big mood poke lomo kitsch authentic disrupt godard.</p>
+          <CTAButton />
+        </div>
+        <div className="flex flex-col items-center">
+          <Image
+            className="w-[80%] md:w-[60%] lg:w-[40%]"
+            src="/hero.png"
+            alt="New York Office"
+            width={0}
+            height={0}
+            sizes="100vw"
+          />
+        </div>
+      </div>
+      {/* // Desktop version */}
+      <div className="hidden w-full h-[90vh] lg:flex">
+        <div className="flex items-end mx-auto container ">
+          <div className="flex flex-row w-full justify-between mb-12">
+            <div className="self-center">
+              <h1 className="{`text-3xl  md:text-6xl lg:text-6xl font-poppins font-bold grow xl:leading-loose text-og-white`}" style={{ lineHeight: "1.15em" }} >We <span className="text-og-orange">Design</span> &<br /> Build Amazing<br /><span className="text-og-orange">Website</span> and <span className="text-og-orange">Apps</span></h1>
+              <p className="font-sans mt-8 mb-10 leading-relaxed text-xl text-og-white">I&apos;m baby freegan sriracha deep v chillwave pitchfork health goth<br />try-hard big mood poke lomo kitsch authentic disrupt godard.</p>
+              <CTAButton />
+            </div>
+            <Image
+              src="/hero.png"
+              alt="New York Office"
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: '40%', height: 'auto' }}
+            />
+          </div>
+        </div >
+      </div >
+    </div>
+  );
+
   return (
     <div className="w-full h-[90vh] bg-og-black flex">
       <div className="flex items-end mx-auto container ">

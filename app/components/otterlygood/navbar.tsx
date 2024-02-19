@@ -5,7 +5,7 @@ import { HiOutlineMenuAlt1 } from 'react-icons/hi';
 function NavBar() {
   return (
     <div className='mx-8 lg:mx-0'>
-      <div className='bg-og-black mx-auto max-w-7xl fixed top-4 left-4 lg:left-0 right-4 lg:right-0 z-10 py-2 rounded-full'>
+      <div className='bg-og-black mx-auto max-w-7xl fixed top-4 left-4 xl:left-0 right-4 xl:right-0 z-10 py-2 rounded-full'>
         <div className='flex justify-between items-center align-middle mx-8'>
 
           {/* TODO: after adding logo, make sure navbar height does not change when resizing screen */}
