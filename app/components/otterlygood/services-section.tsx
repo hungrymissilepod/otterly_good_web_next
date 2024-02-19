@@ -4,25 +4,25 @@ import { useEffect, useRef } from "react";
 
 function ServicesSection() {
   return (
-    <div className='bg-white'>
+    <div className='bg-white px-6 lg:px-0'>
       <div className='mx-auto container py-20'>
         <h2 className='text-og-black font-bold text-2xl'>HOW CAN WE HELP YOU?</h2>
-        <div className='grid grid-cols-4 pt-32 pb-16'>
+        <div className='grid grid-cols-1 lg:grid-cols-4 pt-20 lg:pt-32 pb-0 lg:pb-16 gap-y-8 lg:gap-y-0'>
           <div className='flex flex-col items-center'>
             <div className='bg-og-orange w-10 h-10'></div>
             <h3 className='text-og-black text-4xl font-bold py-4 text-center'>UI / UX<br />Design</h3>
           </div>
           <div className='flex flex-col items-center'>
             <div className='bg-og-orange w-10 h-10'></div>
-            <p className='text-og-black text-4xl font-bold py-4 text-center'>Website Development</p>
+            <p className='text-og-black text-4xl font-bold py-4 text-center'>Website <br />Development</p>
           </div>
           <div className='flex flex-col items-center'>
             <div className='bg-og-orange w-10 h-10'></div>
-            <p className='text-og-black  text-4xl font-bold py-4 text-center'>Mobile Development</p>
+            <p className='text-og-black  text-4xl font-bold py-4 text-center'>Mobile<br /> Development</p>
           </div>
           <div className='flex flex-col items-center'>
             <div className='bg-og-orange w-10 h-10'></div>
-            <p className='text-og-black  text-4xl font-bold py-4 text-center'>Hosting & Maintenance</p>
+            <p className='text-og-black  text-4xl font-bold py-4 text-center'>Hosting &<br /> Maintenance</p>
           </div>
 
         </div>
