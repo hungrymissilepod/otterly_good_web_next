@@ -19,9 +19,12 @@ function NavBar() {
               <li>Case Studies</li>
             </ul>
           </div>
-          <CTAButton
-            primary={false}
-          ></CTAButton>
+          <div className='hidden lg:inline-block'>
+            <CTAButton
+              primary={false}
+            ></CTAButton>
+          </div>
+
           <Link className='inline-block lg:hidden' href={''}>
             <HiOutlineMenuAlt1 style={{ "fontSize": "30px", "color": "white" }} />
           </Link>
@@ -45,7 +48,7 @@ function CTAButton(propsIn: CTAButtonProps) {
   var textColor = props.primary ? 'text-og-white' : 'text-og-black'
   return (
     // TODO: should scroll down to contact us form
-    <Link className='hidden lg:inline-block' href='/'>
+    <Link className='' href='/'>
       <Button className={`px-8 py-5 font-bold rounded-[8px] border-og-white border-2 ${btnColor} ${textColor} font-bold text-md font-sans`} radius='none'>Get in touch</Button>
     </Link>
   );

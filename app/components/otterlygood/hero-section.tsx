@@ -47,7 +47,9 @@ export default function HeroSection() {
         <div className="flex flex-col pt-8 px-4">
           <h1 className="{`mx-auto text-6xl text-center font-poppins font-bold grow xl:leading-loose text-og-white`}" style={{ lineHeight: "1.15em" }} >We <span className="text-og-orange">Design</span> &<br />Build Amazing<br /><span className="text-og-orange">Website</span> and <span className="text-og-orange">Apps</span></h1>
           <p className="font-sans mt-8 mb-10 md:px-20 text-center px-2 leading-relaxed text-xl text-og-white">I&apos;m baby freegan sriracha deep v chillwave pitchfork health goth try-hard big mood poke lomo kitsch authentic disrupt godard.</p>
-          <CTAButton />
+          <div className='hidden'>
+            <CTAButton></CTAButton>
+          </div>
         </div>
         <div className="flex flex-col items-center">
           <Image
@@ -67,7 +69,8 @@ export default function HeroSection() {
             <div className="self-center">
               <h1 className="{`text-3xl  md:text-6xl lg:text-6xl font-poppins font-bold grow xl:leading-loose text-og-white`}" style={{ lineHeight: "1.15em" }} >We <span className="text-og-orange">Design</span> &<br /> Build Amazing<br /><span className="text-og-orange">Website</span> and <span className="text-og-orange">Apps</span></h1>
               <p className="font-sans mt-8 mb-10 leading-relaxed text-xl text-og-white">I&apos;m baby freegan sriracha deep v chillwave pitchfork health goth<br />try-hard big mood poke lomo kitsch authentic disrupt godard.</p>
-              <CTAButton />
+              <CTAButton></CTAButton>
+
             </div>
             <Image
               src="/hero.png"

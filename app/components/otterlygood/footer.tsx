@@ -5,8 +5,8 @@ const redHatDisplay = Red_Hat_Display({ subsets: ['latin'], weight: ['900'] })
 
 function Footer() {
   return (
-    <div className="w-full bg-og-black container mx-auto">
-      <div className="flex flex-row justify-between py-8">
+    <div className="w-full bg-og-black container mx-auto py-8">
+      <div className="block lg:flex-row lg:flex lg:justify-between">
         <div>
           <div className="text-og-white text-4xl font-bold ">
             Like what you see?
@@ -14,9 +14,9 @@ function Footer() {
           <div className="py-8">
             <CTAButton />
           </div>
-
         </div>
-        <div className="flex flex-row gap-x-40">
+
+        <div className="flex flex-row justify-between lg:gap-x-40 py-4 lg:py-0">
           <ul className="text-og-white text-sm pt-2">
             <li className="mb-1">Home</li>
             <li className="mb-1">Case Studies</li>
@@ -34,7 +34,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="my-20">
+      <div className="py-10 lg:py-20">
         <p className="text-og-white font-bold leading-8 text-xl">Drop us a line: <br /><span className="font-normal underline">hello@otterlygood.com</span></p>
       </div>
 
